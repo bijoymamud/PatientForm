@@ -1,0 +1,62 @@
+body {
+  font-family: "Space Grotesk", sans-serif;
+  background-color: #f2f2f2;
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  text-align: center;
+}
+
+table {
+  width: 80%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+}
+
+.total {
+  margin-left: 172px;
+  margin-top: 20px;
+}
+
+th,
+td {
+  padding: 15px;
+  text-align: left;
+}
+
+th {
+  background-color: #007bff;
+  color: white;
+  font-weight: bold;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+tr:hover {
+  background-color: #e5e5e5;
+}
+
+/* Row decoration */
+tr::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  z-index: -1;
+  opacity: 0.8;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 0.8s ease;
+}
+
+tr:hover::before {
+  transform: scaleX(1);
+}

@@ -1,0 +1,116 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Space Grotesk", sans-serif;
+}
+
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, #ff7e5f, #feb47b);
+}
+
+.container {
+  position: absolute;
+  display: flex;
+  margin: auto;
+  align-items: center;
+  justify-content: space-around;
+  top: 0;
+  right: 0;
+  width: 70%;
+  height: 100%;
+  background-color: white;
+  border-top-left-radius: 30%;
+  border-bottom-left-radius: 30%;
+  padding: 50px;
+  box-sizing: border-box;
+}
+
+.movable {
+  height: 350px;
+  width: 200px;
+  margin-top: 20px;
+}
+
+.left-content {
+  width: 30%;
+  padding: 20px;
+  position: relative;
+  left: -20%;
+}
+.textp {
+  font-weight: 700;
+  color: black;
+}
+
+.movable-img {
+  position: relative;
+  text-align: center;
+}
+
+.movable-img p {
+  margin-top: 10px;
+}
+
+.movable-img button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+.movable-img button:hover {
+  background-color: #0056b3;
+}
+
+button a {
+  text-decoration: none;
+  color: white;
+}
+.application-form {
+  width: 40%;
+  margin: 0 auto;
+  left: -50%;
+}
+
+h2 {
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input {
+  width: 95%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.register-button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.register-button:hover {
+  background-color: #0056b3;
+}
